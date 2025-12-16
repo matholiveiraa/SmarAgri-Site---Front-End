@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src ="../img/Logo.png"/  href="index.html">
+        <nav class="navigation">
+            <a href="index.html">Inicial</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="carrinho.html">Carrinho</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+<!-- HTML !-->
+
+    <section class="volta1">
+        <section class="nome1">
+            <h1>Vercelli</h1>
+        </section>      
+        <img class="robo" src ="../img/foto1carro.jpeg"/>
+        <section class="preco1"><p>R$ 750,00</p></section>
+        <button class="button-1" role="button">Comprar!</button>
+    </section>
+
+    <section class="volta2">
+        <section class="nome2">
+            <h1>Adubo</h1>
+        </section>
+        <img class="robo1" src ="../img/fertilizante.jpeg"/>
+        <section class="preco2"><p>R$ 89,00</p></section>
+        <button class="button-2" role="button">Comprar!</button>
+    </section>
+
+    <section class="bloqueio">
+        <span class="icon-close"><ion-icon name="close"><ion-icon name="close-circle"></ion-icon></span>
+        
+
+        <section class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <section class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email:</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed">                     
+                        </ion-icon></span>
+                    <input type="password" required>
+                    <label>Senha:</label>
+                </section>
+                <section class="lembrar-esqueci">
+                    <label><input type="checkbox">
+                    Lembrar senha</label>
+                    <a href="#">Esqueci minha senha</a>
+                </section>
+                <button type="submit" class="btn">Logar</button>
+                <section class="login-registro">
+                    <p>Não possui uma conta? <a
+                    href="#" 
+                    class="link-registro">Registrar-se</a></p>
+                </section>
+            </form>
+        </section>
+
+        <section class="form-box registro">
+            <h2>Registro</h2>
+            <form action="../inserircliente.php" method="POST">
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="cxnome" required>
+                    <label>Nome:</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="cxemail" required>
+                    <label>Email:</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="cxsenha" required>
+                    <label>Senha:</label>
+                </section>
+                <section class="input-box">
+                    <input type="tel" name="cxtelefone" required  size="20" minlength="9" maxlength="14" />
+                    <label>Telefone:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxcpf" required pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})"/>
+                    <label>CPF:</label>
+                </section>
+                <section class="input-box">
+                    <input type="text" name="cxcep" required pattern="\d{5}-?\d{3}"/>
+                    <label>Cep:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxcasa" required min="1" max="10000" size="5"/>
+                    <label>Casa:</label>
+                </section>
+                <section class="input-box">
+                    <input type="text" name="cxcomplemento" required/>
+                    <label>Complemento:</label>
+                </section>
+                <section class="lembrar-esqueci">
+                    <label><input type="checkbox">Eu aceito os termos e condições</label>
+                </section>
+                <button type="submit" class="btn">Registro</button>
+                <section class="login-registro">
+                    <p> Já possui uma conta? <a
+                    href="#" class="link-login">Logar-se</a></p>
+                </section>
+                </form>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <section class="rodape">
+            <h2>Sobre</h2>
+            <ul>
+                <li>
+                  <p>O projeto “SmartAgri Technologies” foi arquitetado por alunos do terceiro ano do curso de Desenvolvimento de Sistemas da 
+                    etec de guarulhos, para solucionar um problema envolvendo áreas verdes na instituição. 
+                  </p>  
+                </li>
+            </ul>
+        </section>
+        <section class="rodape">
+            <h2>Contatos</h2>
+            <ul>
+                <li>
+                   <a href="neymar.chad@gmail.com">smartagri@gmail.com</a> 
+                </li>
+            </ul>
+        </section>
+        <section class="rodape">
+            <h2>Endereço</h2>
+            <ul>
+                <li>
+                <a href="https://www.google.com.br/maps/place/Etec+de+Guarulhos/@-23.4546607,-46.5035389,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce8bb333a69a5f:0xedc9be7470ec277c!8m2!3d-23.4546656!4d-46.5013502">R. Cristóbal Cláudio Elilo, 88 - 
+                    Parque Cecap, Guarulhos - SP, 07190-06</a>  
+                </li>
+            </ul>
+        </section>
+        <section class="rodape">
+            <h2>Ajuda</h2>
+            <ul>
+                <li>
+                <a href="#">FAQ</a> 
+                <a href="#">Telefone</a>  
+                <a href="#">Suporte</a>  
+                </li>
+            </ul>
+        </section>
+
+        <section class="rodape">
+            <h2>Redes sociais</h2>
+            <ul>
+                <li>
+                <a href="https://www.instagram.com/smartagri_/"><img class="icon" src="../img/Instagram.png"></a> 
+                <a href="https://www.instagram.com/smartagri_/"><img class="icon" src="../img/face.png"></a>  
+                <a href="https://www.instagram.com/smartagri_/"><img class="icon" src="../img/tt.png"></a>  
+                </li>
+            </ul>
+        </section>
+
+        <section class="rodape">
+            <img class="logo-rodape" src="../img/Logo - Branco.png">
+        </section>
+
+        <section class="rodape">
+            <section class="copy">
+            <p> ©2023 Copyright Text</p></section>
+            </section>
+    </footer>
+
+
+
+    <script src="../js/script1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

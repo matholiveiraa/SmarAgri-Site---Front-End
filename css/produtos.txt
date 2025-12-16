@@ -1,0 +1,1642 @@
+@font-face {
+    font-family: 'Barlow';
+    src:url(../font/Barlow-Regular.ttf)
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 132vh;
+    background :url('../img/fundo5.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header { /*cabeça do site*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+
+
+.volta1{
+        position:absolute;
+        width: 26%;
+        height: 38%;
+        text-align: center;
+        margin-right: 50%;
+        margin-bottom: 8%;
+        background-color: #fff;
+        border-radius: 5%;
+        opacity: 0.9;
+}
+
+.volta2{
+    position:absolute;
+    width: 26%;
+    height: 38%;
+    text-align: center;
+    margin-right: -50%;
+    margin-bottom: 8%;
+    background-color: #fff;
+    border-radius: 5%;
+    opacity: 0.9;
+}
+
+
+.robo{
+    width: 85%;
+    position: relative;
+    height: 85%;
+    border-radius: 10px;
+    border-color: darkgreen;
+    margin-top: 5%;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 1s;
+}
+
+.robo:hover {
+    -webkit-transform: scale(1.075);
+    -webkit-filter: grayscale(60%);
+    transform: scale(1.075);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.robo1{
+    width: 60%;
+    position: relative;
+    height: 85%;
+    border-radius: 10px;
+    border-color: darkgreen;
+    margin-top: 5%;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 1s;
+}
+
+.robo1:hover {
+    -webkit-transform: scale(1.075);
+    -webkit-filter: grayscale(60%);
+    transform: scale(1.075);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.nome1{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -15%;
+    font-size: 250%;
+}
+
+.preco1{
+    position: absolute;
+    margin-right: 40%;
+    margin-left: 40%;
+    font-size: 120%;
+}
+
+.nome2{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -15%;
+    font-size: 250%;
+}
+
+.preco2{
+    position: absolute;
+    margin-left: 40%;
+    font-size: 120%;
+}
+
+.logo{
+    height: 9%;
+    width: 8%;
+    cursor:pointer;
+}
+
+
+.button-1 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    margin: 0;
+    margin-top:15%;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+    will-change: transform;
+}
+  
+.button-1:disabled {
+    pointer-events: none;
+}
+  
+.button-1:hover {
+    color: #fff;
+    background-color: #96CF25;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.button-1:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.button-2 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    position: relative;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    margin-top: 15%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+    will-change: transform;
+}
+  
+.button-2:disabled {
+    pointer-events: none;
+}
+  
+.button-2:hover {
+    color: #fff;
+    background-color: #96CF25;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.button-2:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.navigation a{ /*textos da navegação do header*/
+    position: relative;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+
+.navigation a::after { /*efeito de transição, negócio animação em baixo*/
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    border-radius: 5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup { /*botão de logar do header */
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #000000;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000000;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+
+
+}
+
+.navigation .btnLogin-popup:hover {
+    background:#fff;
+    color: #96CF25;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #292931;
+    display: flex;
+    margin-top: 90em;
+    position: absolute;
+  }
+
+  footer .rodape{
+    width: 320px;
+    min-width: 150px;
+    padding: 20px;
+  }
+  footer .rodape :nth-child(4){
+    width: 400px;   
+  }
+
+  .icon{
+    filter: invert();
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+  }
+
+  .logo-rodape{
+    width: 230px;
+    height: 100px;
+    margin-left: 100%;
+    margin-top: 30%;
+  }
+  
+  .rodape h2{
+    color:white;
+    margin-bottom: 20px;
+  }
+  
+  .rodape ul li{
+    margin: 10px 0px;
+    list-style: none;
+  }
+  .rodape ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .rodape ul li a:hover{
+    color:white;
+  }
+  
+  .rodape p{
+    color: white;
+  }
+
+  .copy{
+    margin-top: 80%;
+  }
+
+
+.logo-rodape{
+    width: 230px;
+    height: 100px;
+    margin-left: 100%;
+    margin-top: 30%;
+}
+  
+
+  .bloqueio {
+    position: absolute;
+    width:350px;
+    height: 440px;
+    background: transparent; /*fundo cor */
+    border: 2px solid darkgreen; /* isto serve para mudar a cor da borda da popup. */
+    border-radius: 20px;
+    margin-bottom: 15%;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    overflow: hidden;/*propriedade do CSS utilizada para tratar conteúdos que ultrapassam os limites de um elemento. O objetivo do overflow é fazer com que conteúdos muito grandes possam caber dentro de uma página através do uso de barras de rolagem*/
+    transition: transform .5s ease, height .2 ease;
+    
+}
+.bloqueio.active{
+  height: 85%;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+.bloqueio.active-popup{
+  transform: scale(1);
+  overflow-y: scroll;
+}
+
+.bloqueio .form-box{
+  width: 100%;
+  padding: 40px;
+
+}
+
+.bloqueio .form-box.login{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.bloqueio.active .form-box.login{
+  transition: transform .18s ease;
+  transform: translateX(-400px);
+  
+}
+
+
+.bloqueio .form-box.registro{
+  position: absolute; /*indica que o elemento ficará em uma posição fixa em relação à página.*/
+  transform: translateX(400px); /*força o elemento se mover, se for terminar com x é pra os lados e com y para altura */
+  overflow-y: scroll;
+  padding-top:70%;
+
+}
+
+.bloqueio.active .form-box.registro{
+  transition: transform .18s ease;
+  transform: translateX(0);
+  overflow-y: scroll;
+
+
+
+}
+
+.bloqueio .icon-close{
+
+  /*icone de fechar o loginbox*/
+
+  position: absolute; /*indica que o elemento ficará em uma posição fixa em relação à página.*/
+  top: 0; /*altura igual a 0, lembrando "O "top" posiciona o elemento em um coordenada, o margin-top usa como referencia os "irmãos" do objeto em questão, apenas dando um espaço"*/
+  left: 0; /*totalmente a direita*/
+  width: 45px; /*largura do botao*/
+  height: 45px; /*altura do botão*/
+  background: #162938;
+  font-size: 2em;
+  color: #fff;
+  display: flex; /*faz ficar os itens em linhas*/
+  justify-content: center; /*centralizar o conteudo*/
+  align-items: center; /* Itens posicionados ao redor do centro */
+  border-bottom-right-radius: 20px; /*ajustar a redoneça do botão do lado esquerdo, antes estava espetado*/
+  cursor: pointer; /*definir cursor ao passar em cima como de clicar*/
+  z-index: 3;
+
+}
+
+/* Scrollbar estilo */
+::-webkit-scrollbar {
+  width: 1vh;
+  overflow-y: hidden;
+  z-index:1.5;
+  position:absolute;
+  }
+  
+  ::-webkit-scrollbar-track {
+
+  border-radius: 40%;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: yellowgreen;  
+  border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #88ba1c;  
+  }
+
+  .bloqueio.active-popup::-webkit-scrollbar { /*scroll do bloqueio*/
+    width: 1vh;
+    z-index:1;
+    overflow:hidden;
+  }
+
+.form-box h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-135%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:none ;
+    outline: none;
+    color: #162938;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+
+.lembrar-esqueci{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.lembrar-esqueci label input{
+    accent-color: #162938;
+    margin-right: 3px;
+
+}
+
+.lembrar-esqueci a {
+    color: #162938;
+    text-decoration: none;
+
+}
+
+.lembrar-esqueci a:hover{
+    text-decoration: underline;
+
+}
+
+.btn{
+    width: 100%; /*largura botao */
+    height: 45px; /*altura botao*/
+    background: #163938; /*cor de fundo botao*/
+    border: none; /*borda do botão */
+    outline: none; /*pós borda do botão */
+    border-radius: 6px; /*raio da borda "redondo"*/
+    cursor: pointer; /*como o cursor é mostrado ao passar em cima do botao */
+    font-size: 1em; /*tamanho fonte do botão */
+    color: #fff; /*cor do texto do botão */
+    font-weight: 500; /*peso da fonte do botão */
+    
+
+}
+
+.login-registro{ 
+    /*registrar-se */
+    font-size: .9em; /*tamanho da fonte do registrar-se */
+    color: #162938; /*cor da fonte*/
+    text-align: center; /*centralizar texto*/
+    font-weight: 500; /* peso da fonte */
+    margin: 25px 0 10px; /* margem do texto */
+
+
+}
+
+.login-registro p a {
+    /*registre-se*/
+    color: #162938; /*cor da palavra*/
+    text-decoration: none; /*decoração de texto 0*/
+    font-weight: 600; /*peso da fonte*/
+
+}
+
+.login-registro p a:hover{
+    text-decoration: underline; /*hover corresponde quando o usuário designa um elemento com um dispositivo apontador, mas não necessariamente o ativa.*/
+    
+}
+
+/*computadores 1600x900*/
+
+@media (max-width:1600px){
+    .nome1{
+        position: absolute;
+        margin-left: 32%;
+        margin-top: -15%;
+        font-size: 250%;
+    }
+
+    .nome2{
+        position: absolute;
+        margin-left: 35%;
+        margin-top: -15%;
+        font-size: 250%;
+    }
+
+    .preco1{
+      font-size: 80%;
+    }
+  
+    .preco2{
+      font-size:80%;
+    }
+    #footer{
+        width: 100%;
+        height: 20%;
+        background-color: #292931;
+        display: flex;
+        margin-top: 90em;
+        position: absolute;
+      }
+    
+      footer .rodape{
+        width: 40.4551201011378vh;
+        min-width: 18.963337547408344vh;
+        padding: 2.5284450063211126vh;
+      }
+      footer .rodape :nth-child(4){
+        width: 50.56890012642225vh;   
+      }
+    
+      .icon{
+        width: 6.321112515802781vh;
+        height: 50px;
+        padding: 12px;
+      }
+    
+      .logo-rodape{
+        width: 29.077117572692792vh;
+        height: 100px;
+        margin-left: 80%;
+        margin-top: 20%;
+      }
+      
+      .rodape h2{
+        color:white;
+        margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+      }
+      
+      .rodape ul li{
+        margin: 1.2642225031605563vh 0px;
+        list-style: none;
+      }
+      .rodape ul li a{
+        color: white;
+        text-decoration: none;
+        white-space: normal;
+      }
+      
+      .rodape ul li a:hover{
+        color:white;
+      }
+      
+      .rodape p{
+        color: white;
+    
+      }
+    
+      .copy{
+        margin-top: 80%;
+      }
+}
+
+
+/*computadores 1440x900*/
+
+@media (max-width: 1440px){
+    .nome1{
+        position: absolute;
+        margin-left: 30%;
+        margin-top: -15%;
+        font-size: 250%;
+    }
+
+    .nome2{
+        position: absolute;
+        margin-left: 35%;
+        margin-top: -15%;
+        font-size: 250%;
+    }
+
+    .preco1{
+        position: absolute;
+        margin-right: 40%;
+        margin-left: 40%;
+        font-size: 110%;
+    }
+
+    .preco2{
+        font-size: 110%;
+    }
+
+    .volta1{
+        position:absolute;
+        width: 30%;
+        height: 42%;
+        text-align: center;
+        margin-right: 50%;
+        margin-bottom: 8%;
+        background-color: #fff;
+        border-radius: 5%;
+        opacity: 0.9;
+}
+
+.volta2{
+    position:absolute;
+    width: 30%;
+    height: 42%;
+    text-align: center;
+    margin-right: -50%;
+    margin-bottom: 8%;
+    background-color: #fff;
+    border-radius: 5%;
+    opacity: 0.9;
+}
+    
+
+    footer{
+        width: 100%;
+        height: 45%;
+        background-color: #292931;
+        display: flex;
+        margin-top: 90em;
+        position: absolute;
+      }
+    
+      footer .rodape{
+        width: 40.4551201011378vh;
+        min-width: 18.963337547408344vh;
+        padding: 2.5284450063211126vh;
+      }
+      footer .rodape :nth-child(4){
+        width: 50.56890012642225vh;   
+      }
+    
+      .icon{
+        width: 6.321112515802781vh;
+        height: 50px;
+        padding: 12px;
+      }
+    
+      .logo-rodape{
+        width: 29.077117572692792vh;
+        height: 100px;
+        margin-left: 80%;
+        margin-top: 20%;
+      }
+      
+      .rodape h2{
+        color:white;
+        margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+      }
+      
+      .rodape ul li{
+        margin: 1.2642225031605563vh 0px;
+        list-style: none;
+      }
+      .rodape ul li a{
+        color: white;
+        text-decoration: none;
+        white-space: normal;
+      }
+      
+      .rodape ul li a:hover{
+        color:white;
+      }
+      
+      .rodape p{
+        color: white;
+    
+      }
+    
+      .copy{
+        margin-top: 85%;
+      }
+}
+
+/*computadores 1280x720*/
+@media (max-width:1280px){
+
+
+.nome1{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -15%;
+    font-size: 250%;
+}
+
+.nome2{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -15%;
+    font-size: 250%;
+}
+
+.preco1{
+    position: absolute;
+    margin-right: 40%;
+    margin-left: 40%;
+    font-size: 90%;
+}
+
+.preco2{
+    font-size: 90%;
+}
+
+.volta1{
+    position:absolute;
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    margin-right: 50%;
+    margin-bottom: 8%;
+    background-color: #fff;
+    border-radius: 5%;
+    opacity: 0.9;
+}
+
+.volta2{
+    position:absolute;
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    margin-right: -50%;
+    margin-bottom: 8%;
+    background-color: #fff;
+    border-radius: 5%;
+    opacity: 0.9;
+}
+
+
+footer{
+    width: 100%;
+    height: 60%;
+    background-color: #292931;
+    display: flex;
+    margin-top: 90em;
+    position: absolute;
+  }
+
+  footer .rodape{
+    width: 40.4551201011378vh;
+    min-width: 18.963337547408344vh;
+    padding: 2.5284450063211126vh;
+  }
+  footer .rodape :nth-child(4){
+    width: 50.56890012642225vh;   
+  }
+
+  .icon{
+    width: 9.321112515802781vh;
+    height: 10vh;
+    padding: 12px;
+  }
+
+  .logo-rodape{
+    width: 29.077117572692792vh;
+    height: 23%;
+    margin-left: 80%;
+    margin-top: 20%;
+  }
+  
+  .rodape h2{
+    color:white;
+    margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+  }
+  
+  .rodape ul li{
+    margin: 1.2642225031605563vh 0px;
+    list-style: none;
+  }
+  .rodape ul li a{
+    color: white;
+    text-decoration: none;
+    text-size-adjust: 11%;
+    white-space: normal;
+  }
+  
+  .rodape ul li a:hover{
+    color:white;
+  }
+  
+  .rodape p{
+    color: white;
+
+  }
+
+  .copy{
+    margin-top: 85%;
+  }
+
+  .bloqueio.active{
+    height: 430px;
+}
+
+
+
+}
+
+/*pc 1156 width x ???*/
+@media(max-width: 1156px){
+  footer{
+    width: 100%;
+    height:65%;
+    background-color: #292931;
+    display: flex;
+    margin-top: 90em;
+    position: absolute;
+  }
+
+  footer .rodape{
+    width: 40.4551201011378vh;
+    min-width: 18.963337547408344vh;
+    padding: 2.5284450063211126vh;
+  }
+  footer .rodape :nth-child(4){
+    width: 50.56890012642225vh;   
+  }
+
+  .icon{
+    width: 9.321112515802781vh;
+    height: 10vh;
+    padding: 12px;
+  }
+
+  .logo-rodape{
+    width: 24.077117572692792vh;
+    height: 16%;
+    margin-left: 80%;
+    margin-top: 20%;
+  }
+  
+  .rodape h2{
+    color:white;
+    margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+  }
+  
+  .rodape ul li{
+    margin: 1.2642225031605563vh 0px;
+    font-size:80%;
+    list-style: none;
+  }
+  .rodape ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 80%;
+    white-space: normal;
+  }
+  
+  .rodape ul li a:hover{
+    color:white;
+  }
+  
+  .rodape p{
+    color: white;
+
+  }
+
+  .copy{
+    margin-top: 105%;
+  }
+
+  .bloqueio.active{
+    height:460px;
+    z-index:100;
+  }
+
+  .preco1{
+    font-size: 80%;
+  }
+
+  .preco2{
+    font-size:80%;
+  }
+}
+/*computadores 1024x768*/
+@media (max-width:1024px){
+
+
+    .nome1{
+        position: absolute;
+        margin-left: 30%;
+        margin-top: -15%;
+        font-size: 220%;
+    }
+    
+    .nome2{
+        position: absolute;
+        margin-left: 35%;
+        margin-top: -15%;
+        font-size: 220%;
+    }
+    
+    .preco1{
+        position: absolute;
+        margin-right: 40%;
+        margin-left: 40%;
+        font-size: 90%;
+    }
+    
+    .preco2{
+        font-size: 90%;
+    }
+    
+    .volta1{
+        position:absolute;
+        width: 35%;
+        height: 45%;
+        text-align: center;
+        margin-right: 50%;
+        margin-bottom: 8%;
+        background-color: #fff;
+        border-radius: 5%;
+        opacity: 0.9;
+    }
+    
+    .volta2{
+        position:absolute;
+        width: 35%;
+        height: 45%;
+        text-align: center;
+        margin-right: -50%;
+        margin-bottom: 8%;
+        background-color: #fff;
+        border-radius: 5%;
+        opacity: 0.9;
+    }
+    
+    .logo{
+        height: 15%;
+        width: 14%;
+        cursor:pointer;
+    }
+    
+
+    footer{
+        width: 100%;
+        height:55%;
+        background-color: #292931;
+        display: flex;
+        margin-top: 90em;
+        position: absolute;
+      }
+    
+      footer .rodape{
+        width: 40.4551201011378vh;
+        min-width: 18.963337547408344vh;
+        padding: 2.5284450063211126vh;
+      }
+      footer .rodape :nth-child(4){
+        width: 50.56890012642225vh;   
+      }
+    
+      .icon{
+        width: 9.321112515802781vh;
+        height: 10vh;
+        padding: 12px;
+      }
+    
+      .logo-rodape{
+        width: 24.077117572692792vh;
+        height: 16%;
+        margin-left: 80%;
+        margin-top: 20%;
+      }
+      
+      .rodape h2{
+        color:white;
+        margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+      }
+      
+      .rodape ul li{
+        margin: 1.2642225031605563vh 0px;
+        font-size:80%;
+        list-style: none;
+      }
+      .rodape ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 80%;
+        white-space: normal;
+      }
+      
+      .rodape ul li a:hover{
+        color:white;
+      }
+      
+      .rodape p{
+        color: white;
+    
+      }
+    
+      .copy{
+        margin-top: 105%;
+      }
+
+      .bloqueio .form-box.registro{
+        position: absolute; /*indica que o elemento ficará em uma posição fixa em relação à página.*/
+        transform: translateX(400px); /*força o elemento se mover, se for terminar com x é pra os lados e com y para altura */
+        overflow-y: scroll;
+        padding-top:130%;
+    
+    }
+
+
+    }
+
+@media (max-width:900px){
+  footer{
+    width:100%;
+    height: 160%;
+    background-color: #292931;
+    display: block;
+    margin-top: 250%;
+    position: absolute;
+    float: bottom;
+  }
+
+  footer .rodape{
+    margin-left: -10%;
+    width: 100%;
+    display:block;
+    font-size:140%;
+
+  }
+
+  .icon{
+    width: 6.321112515802781vh;
+    height: 50px;
+    width: 50px;
+    padding: 3%;
+    filter: invert(1);
+
+
+  }
+
+  .logo-rodape{
+    width: 50%;
+    height: 45%;
+    float:inline-end;
+    margin-right:25%;
+  }
+  
+  .rodape h2{
+    color:white;
+    margin-left: 25%;
+    margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+  }
+
+  .rodape ul li{
+    margin: 0.2642225031605563vh 0px;
+    list-style: none;
+    z-index:2;
+    margin-left: 25%;
+    font-size: 90%;
+
+  }
+  .rodape ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+
+  }
+
+  
+  .rodape ul li a:hover{
+    color:white;
+  }
+  
+  .rodape p{
+    color: white;
+    float: left;
+
+    
+
+  }
+
+  .copy{
+    margin-top: 10%;
+    float:right;
+  }
+
+}
+/*computadores 800x600*/
+@media (max-width:800px){
+    .nome1{
+        position: absolute;
+        margin-left: 30%;
+        margin-top: -15%;
+        font-size: 200%;
+    }
+    
+    .nome2{
+        position: absolute;
+        margin-left: 35%;
+        margin-top: -15%;
+        font-size: 200%;
+    }
+    
+    .preco1{
+        position: absolute;
+        margin-right: 40%;
+        margin-left: 40%;
+        font-size: 70%;
+    }
+    
+    .preco2{
+        font-size: 70%;
+    }
+    
+    .volta1{
+        position:absolute;
+        width: 35%;
+        height: 45%;
+        text-align: center;
+        margin-right: 50%;
+        margin-bottom: 8%;
+        background-color: #fff;
+        border-radius: 5%;
+        opacity: 0.9;
+    }
+    
+    .volta2{
+        position:absolute;
+        width: 35%;
+        height: 45%;
+        text-align: center;
+        margin-right: -50%;
+        margin-bottom: 8%;
+        background-color: #fff;
+        border-radius: 5%;
+        opacity: 0.9;
+    }
+    
+    .logo{
+        height: 15%;
+        width: 14%;
+        cursor:pointer;
+    }
+    
+
+    footer{
+      width:100%;
+      height: 240%;
+      background-color: #292931;
+      display: block;
+      margin-top: 250%;
+      position: absolute;
+      float: bottom;
+    }
+  
+    footer .rodape{
+      width: 100%;
+      display:block;
+      font-size:100%;
+      white-space: normal;
+      margin-left: -8%;
+  
+    }
+  
+    .icon{
+      width: 6.321112515802781vh;
+      height: 50px;
+      width: 50px;
+      padding: 3%;
+      filter: invert(1);
+  
+  
+    }
+  
+    .logo-rodape{
+      width: 50%;
+      height: 45%;
+      float:inline-end;
+      margin-right:25%;
+    }
+    
+    .rodape h2{
+      color:white;
+      margin-left: 25%;
+      margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+    }
+  
+    .rodape ul li{
+      margin: 0.2642225031605563vh 0px;
+      list-style: none;
+      z-index:2;
+      margin-left: 25%;
+      font-size: 90%;
+  
+    }
+    .rodape ul li a{
+      color: white;
+      text-decoration: none;
+      font-size: 90%;
+  
+    }
+  
+    
+    .rodape ul li a:hover{
+      color:white;
+    }
+    
+    .rodape p{
+      color: white;
+      float: left;
+  
+      
+  
+    }
+  
+    .copy{
+      margin-top: 10%;
+      float:right;
+    }
+
+    header { /*cabeça do site*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    
+    }
+    .navigation a{ /*textos da navegação do header*/
+        position: relative;
+        font-size: 1.2em;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 500; /*espessura da fonte*/    
+        margin-left: 20px;
+    }
+      
+    .logo{
+        height: 16%;
+        width: 15%;
+        cursor:pointer;
+    }
+
+    .bloqueio {
+        position: absolute;
+        width: 30.60452729693742vw;
+        height: 85.85092127303182vh;
+        background: transparent; /*fundo cor */
+        border: 2px solid darkgreen; /* isto serve para mudar a cor da borda da popup. */
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        overflow: hidden;/*propriedade do CSS utilizada para tratar conteúdos que ultrapassam os limites de um elemento. O objetivo do overflow é fazer com que conteúdos muito grandes possam caber dentro de uma página através do uso de barras de rolagem*/
+        transition: transform .5s ease, height .2 ease;
+        z-index:102
+    
+    }
+    
+      .bloqueio .form-box{
+      width: 100%;
+      padding: 20px;
+    
+      }
+    
+      .bloqueio.active{
+        height: 440px;
+        z-index: 102;
+    
+    
+      }
+
+      .bloqueio .form-box.registro{
+        position: absolute; /*indica que o elemento ficará em uma posição fixa em relação à página.*/
+        transform: translateX(400px); /*força o elemento se mover, se for terminar com x é pra os lados e com y para altura */
+        overflow-y: scroll;
+        padding-top:200%;
+        overflow-x:hidden;
+    
+    }
+
+
+    
+    }
+      
+@media (max-width: 435px){
+
+      .container{
+        width:100%;
+      }
+    
+      body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh;
+        width: 80%;
+        background-size: cover;
+    }
+    
+        .logo{
+            height: 40%;
+            width: 40%;
+            cursor:pointer;
+        }
+    
+        .navigation a{ /*textos da navegação do header*/
+            position: relative;
+            font-size: 1.1em;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 500; /*espessura da fonte*/    
+            margin-left: 40px;
+        }
+    
+        header { /*cabeça do site*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        
+        }
+    
+        .navigation .btnLogin-popup { /*botão de logar do header */
+            width: 110px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid #000000;
+            outline: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: #000000;
+            font-weight: 500; /*espessura da fonte*/    
+            margin-left: 55px;
+            transition: .5s;
+        
+        
+        }
+        
+    
+        .bloqueio {
+            position: absolute;
+            width: 80%;
+            height: 50%;
+            background: transparent; /*fundo cor */
+            border: 2px solid darkgreen; /* isto serve para mudar a cor da borda da popup. */
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20%;
+            transform: scale(0);
+            overflow: hidden;/*propriedade do CSS utilizada para tratar conteúdos que ultrapassam os limites de um elemento. O objetivo do overflow é fazer com que conteúdos muito grandes possam caber dentro de uma página através do uso de barras de rolagem*/
+            transition: transform .5s ease, height .2 ease;
+            z-index:99
+        
+        }
+      
+
+      footer{
+        width:120%;
+        height: 110%;
+        background-color: #292931;
+        display: block;
+        margin-top: 620%;
+        position: absolute;
+        float: bottom;
+      }
+    
+      footer .rodape{
+        width: 100%;
+        display:block;
+        padding: 0.5284450063211126vh;
+      }
+    
+      .icon{
+        width: 6.321112515802781vh;
+        height: 50px;
+        width: 50px;
+        padding: 3%;
+        filter: invert(1);
+
+
+      }
+    
+      .logo-rodape{
+        width: 50%;
+        height: 45%;
+        float:inline-end;
+        margin-right:25%;
+      }
+      
+      .rodape h2{
+        color:white;
+        margin-left: 25%;
+        margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+      }
+
+      .rodape ul li{
+        margin: 0.2642225031605563vh 0px;
+        list-style: none;
+        z-index:2;
+        margin-left: 25%;
+        font-size: 90%;
+
+      }
+      .rodape ul li a{
+        color: white;
+        text-decoration: none;
+ 
+        font-size: 90%;
+
+      }
+
+      
+      .rodape ul li a:hover{
+        color:white;
+      }
+      
+      .rodape p{
+        color: white;
+        float: left;
+
+        
+    
+      }
+    
+      .copy{
+        margin-top: 10%;
+        float:right;
+      }
+
+
+      .volta1{
+        margin-left:70%;
+        width:85%;
+        height:25%;
+      }
+
+      .volta2{
+        margin-top:230%;
+        width:85%;
+        height:25%;
+        margin-left: -30%;
+        
+      }
+
+      .nome1{
+        font-size:250%; 
+      }
+
+      .nome2{
+        font-size:250%; 
+      }
+    }
+@media (max-width: 435px) and (max-height:690px){
+      footer{
+        width:120%;
+        height: 160%;
+        background-color: #292931;
+        display: block;
+        margin-top: 680%;
+        position: absolute;
+        float: bottom;
+      }
+    
+      footer .rodape{
+        width: 100%;
+        display:block;
+        padding: 0.5284450063211126vh;
+      }
+    
+      .icon{
+        width: 6.321112515802781vh;
+        height: 50px;
+        width: 50px;
+        padding: 3%;
+        filter: invert(1);
+
+
+      }
+    
+      .logo-rodape{
+        width: 50%;
+        height: 45%;
+        float:inline-end;
+        margin-right:25%;
+      }
+      
+      .rodape h2{
+        color:white;
+        margin-left: 25%;
+        margin-bottom: 20px; /*define a margin area na parte inferior de um elemento*/
+      }
+
+      .rodape ul li{
+        margin: 0.2642225031605563vh 0px;
+        list-style: none;
+        z-index:2;
+        margin-left: 25%;
+        font-size: 90%;
+
+      }
+      .rodape ul li a{
+        color: white;
+        text-decoration: none;
+ 
+        font-size: 90%;
+
+      }
+
+      
+      .rodape ul li a:hover{
+        color:white;
+      }
+      
+      .rodape p{
+        color: white;
+        float: left;
+
+        
+    
+      }
+    
+      .copy{
+        margin-top: 10%;
+        float:right;
+      }
+    }

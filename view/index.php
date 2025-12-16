@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicial</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <!--header é usado para a barra de navegação na parte superior da página-->    
+    <header>
+        <img class="logo" src ="../img/Logo.png"  href="index.php">
+        <nav class="navigation">
+            <a href="index.php">Inicial</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="carrinho.html">Carrinho</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <section class="bloqueio">
+        <span class="icon-close"><ion-icon name="close"><ion-icon name="close-circle"></ion-icon></span>
+        
+
+        <section class="form-box login">
+                <h2>Login</h2>
+                <form action="../model/acesssarsistema.php" method="POST">
+                    <section class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon></span>
+                        <input type="email" name="cxemail" required>
+                      <label>Email:</label>
+                    </section>
+                    <section class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed">                     
+                            </ion-icon></span>
+                        <input type="password" name="cxsenha" required>
+                        <label>Senha:</label>
+                    </section>
+                    <section class="lembrar-esqueci">
+                        <label><input type="checkbox">
+                        Lembrar senha</label>
+                        <a href="#">Esqueci minha senha</a>
+                    </section>
+                    <button type="submit" class="btn">Logar</button>
+                    <section class="login-registro">
+                        <p>Não possui uma conta? <a
+                        href="#" 
+                        class="link-registro">Registrar-se</a></p>
+                    </section>
+                </form>
+        </section>
+
+        <section class="form-box registro">
+            <h2>Registro</h2>
+            <form action="../model/inserircliente.php"  method="POST">
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="cxnome" required>
+                    <label>Nome:</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="cxemail" required>
+                    <label>Email:</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="cxsenha" required>
+                    <label>Senha:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxtelefone" required/>
+                    <label>Telefone:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxcpf" required/>
+                    <label>CPF:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxcep" required/>
+                    <label>Cep:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxcasa" required/>
+                    <label>Casa:</label>
+                </section>
+                <section class="input-box">
+                    <input type="text" name="cxcomplemento" required/>
+                    <label>Complemento:</label>
+                </section>
+                <section class="lembrar-esqueci">
+                    <label><input type="checkbox">Eu aceito os termos e condições</label>
+                </section>
+                <button type="submit" class="btn-registro">Registro</button>
+                <section class="login-registro">
+                    <p> Já possui uma conta? <a
+                    href="#" class="link-login">Logar-se</a></p>
+                </section>
+                </form>
+            </section>
+        </section>
+    </section>
+    
+    <main id="container">
+        
+        <article class="left">
+            <section class="confira">
+                <h2>       CONFIRA
+            NOSSOS
+                PRODUTOS
+                </h2>
+
+                
+            </section>
+            <figure>
+                <a href="produtos.html">
+                    <img src="../img/foto1carro.jpeg" class="robo">
+                </a>
+              </figure>
+        </article>
+
+    <section class="bloqueio">
+        <span class="icon-close"><ion-icon name="close"><ion-icon name="close-circle"></ion-icon></span>
+        
+
+        <section class="form-box login">
+                <h2>Login</h2>
+                <form action="../acesssarsistema.php" method="POST">
+                    <section class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon></span>
+                        <input type="email" name="cxemail" required>
+                      <label>Email:</label>
+                    </section>
+                    <section class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed">                     
+                            </ion-icon></span>
+                        <input type="password" name="cxsenha" required>
+                        <label>Senha:</label>
+                    </section>
+                    <section class="lembrar-esqueci">
+                        <label><input type="checkbox">
+                        Lembrar senha</label>
+                        <a href="#">Esqueci minha senha</a>
+                    </section>
+                    <button type="submit" class="btn">Logar</button>
+                    <section class="login-registro">
+                        <p>Não possui uma conta? <a
+                        href="#" 
+                        class="link-registro">Registrar-se</a></p>
+                    </section>
+                </form>
+        </section>
+
+        <section class="form-box registro">
+            <h2>Registro</h2>
+            <form action="../inserircliente.php" method="POST">
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="cxnome" required>
+                    <label>Nome:</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="cxemail" required>
+                    <label>Email:</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="cxsenha" required>
+                    <label>Senha:</label>
+                </section>
+                <section class="input-box">
+                    <input type="tel" name="cxtelefone"/>
+                    <label>Telefone:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxcpf" required/>
+                    <label>CPF:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxcep" required/>
+                    <label>Cep:</label>
+                </section>
+                <section class="input-box">
+                    <input type="number" name="cxcasa" required/>
+                    <label>Casa:</label>
+                </section>
+                <section class="input-box">
+                    <input type="text" name="cxcomplemento" required/>
+                    <label>Complemento:</label>
+                </section>
+                <section class="lembrar-esqueci">
+                    <label><input type="checkbox">Eu aceito os termos e condições</label>
+                </section>
+                <button type="submit" class="btn-cadastro">Registro</button>
+                <section class="login-registro">
+                    <p> Já possui uma conta? <a
+                    href="#" class="link-login">Logar-se</a></p>
+                </section>
+                </form>
+            </section>
+        </section>
+    </section>
+
+        <article class="right">
+            <section class="nós">
+                <h2>Nós somos uma empresa líder neste setor</h2>
+
+            </section>
+
+            <section class="oferecendo">
+                <h2>Oferecendo:
+                    <span class="highlight">Qualidade</span>
+                    <span class="highlight">Inovação</span>
+                    e
+                    <span class="highlight">Confiabilidade</span>
+                </h2>
+            </section>
+
+            <section class="frase">
+                <h2>“A responsabilidade social e 
+a preservação ambiental significa
+um compromisso com a vida.”</h2>
+            </section>
+        </article>
+    </main>
+        
+
+       
+      <footer>
+        <section class="rodape">
+            <h2>Sobre</h2>
+            <ul>
+                <li>
+                  <p>O projeto “SmartAgri Technologies” foi arquitetado por alunos do terceiro ano do curso de Desenvolvimento de Sistemas da 
+                    Escola Técnica Estadual de Guarulhos, para solucionar um problema envolvendo áreas verdes na instituição. 
+                  </p>  
+                </li>
+            </ul>
+        </section>
+        <section class="rodape">
+            <h2>Contatos</h2>
+            <ul>
+                <li>
+                   <a href="kaique.faria@gmail.com">contato.smart
+                    agri@gmail.com / 
+                    
+                    </a> </br>
+                   <a href="neymar.chad@gmail.com">smart
+                    agri@gmail.com</a> 
+                </li>
+            </ul>
+        </section>
+        <section class="rodape">
+            <h2>Endereço</h2>
+            <ul>
+                <li>
+                <a href="https://www.google.com.br/maps/place/Etec+de+Guarulhos/@-23.4546607,-46.5035389,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce8bb333a69a5f:0xedc9be7470ec277c!8m2!3d-23.4546656!4d-46.5013502">R. Cristóbal Cláudio Elilo, 88 - 
+                    Parque Cecap, Guarulhos - SP, 07190-06</a>  
+                </li>
+            </ul>
+        </section>
+        <section class="rodape">
+            <h2>Ajuda</h2>
+            <ul>
+                <li>
+                <a href="#">FAQ</a> 
+                <a href="#">Telefone</a>  
+                <a href="#">Suporte</a>  
+                </li>
+            </ul>
+        </section>
+        <section class="rodape">
+            <h2>Redes sociais</h2>
+            <ul>
+                <li>
+                <a href="https://www.instagram.com/smartagri_/"><img class="icon" src="../img/Instagram.png"></a> 
+                <a href="https://www.instagram.com/smartagri_/"><img class="icon" src="../img/face.png"></a>  
+                <a href="https://www.instagram.com/smartagri_/"><img class="icon" src="../img/tt.png"></a>  
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="rodape">
+                <img class="logo-rodape" src="../img/Logo - Branco.png">
+        </section>
+
+        <section class="rodape">
+            <section class="copy"> <p> ©2023 Copyright Text</p> </section>
+        </section>
+
+    </footer>
+
+
+
+    <script src="../js/script1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
